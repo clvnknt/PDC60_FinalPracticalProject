@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC06_Module08.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Student Records App" FontSize="28" FontAttributes="Bold" TextColor="#2196F3" Margin="0,0,0,10" HorizontalTextAlignment="Center" />
+
+        <Label Text="Effortlessly manage and view student records." FontSize="16" TextColor="#757575" Margin="0,0,0,30" HorizontalTextAlignment="Center" />
+
+        <Button Text="View Student Records" Clicked="ViewStudentRecords_Clicked" />
+        <Button Text="View Attendance Records" Clicked="OnAttendanceButtonClicked" />
+        <Button Text="View Academic History" Clicked="OnViewAcademicHistoryClicked" />
+        <Button Text="About Us" Clicked="AboutUs_Clicked" BackgroundColor="#2196F3" TextColor="White" FontSize="18" CornerRadius="5" HeightRequest="50" />
+    </StackLayout>
+</ContentPage>

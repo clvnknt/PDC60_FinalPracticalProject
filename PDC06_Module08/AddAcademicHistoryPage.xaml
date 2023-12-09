@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC06_Module08.AddAcademicHistoryPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+        <!-- Header Label -->
+        <Label Text="Add Academic Record" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <!-- Entry fields for academic history record -->
+        <Entry x:Name="studentNameEntry" Placeholder="Student Name" Margin="0,0,0,10" />
+        <Entry x:Name="studentIdEntry" Placeholder="Student ID" Margin="0,0,0,10" Keyboard="Numeric" />
+        <Entry x:Name="yearLevelEntry" Placeholder="Year Level" Margin="0,0,0,10" Keyboard="Numeric" />
+        <Entry x:Name="yearEntry" Placeholder="Year" Margin="0,0,0,10" Keyboard="Numeric" />
+        <Entry x:Name="degreeEntry" Placeholder="Degree" Margin="0,0,0,10" />
+        <Entry x:Name="universityEntry" Placeholder="University" Margin="0,0,0,10" />
+        <Entry x:Name="majorEntry" Placeholder="Major" Margin="0,0,0,10" />
+        <Entry x:Name="gpaEntry" Placeholder="GPA" Margin="0,0,0,20" Keyboard="Numeric" />
+
+        <!-- Button to add academic record -->
+        <Button Text="Add Academic Record" Clicked="OnAddAcademicRecordClicked" HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>

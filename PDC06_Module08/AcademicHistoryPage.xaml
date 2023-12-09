@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC06_Module08.AcademicHistoryPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+        <!-- Header Label -->
+        <Label Text="Academic History Records" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <!-- Description Label -->
+        <Label Text="View academic history records for students." HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <!-- Button to navigate to AddAcademicHistoryPage.xaml -->
+        <Button Text="Add Academic Record" Clicked="OnAddAcademicRecordClicked" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <!-- ListView -->
+        <ListView x:Name="academicHistoryListView" VerticalOptions="FillAndExpand" ItemSelected="OnAcademicHistoryItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <!-- Display the student name -->
+                            <Label Text="{Binding student_name}" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
