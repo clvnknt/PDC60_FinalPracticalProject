@@ -12,7 +12,7 @@ namespace PDC06_Module08
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UpdatePage : ContentPage
     {
-        private const string url_update = "http://192.168.100.18/pdc6/api-update.php";
+        private const string url_update = "http://26.254.254.152/pdc6/api-update.php";
         private HttpClient _Client = new HttpClient();
         private ObservableCollection<Post> _posts;
 

@@ -20,17 +20,20 @@ namespace PDC06_Module08
 
     public partial class StudentRecordsPage : ContentPage
     {
-        private const string url_retrieve = "http://192.168.100.18/pdc6/api_r2.php";
+        private const string url_retrieve = "http://26.254.254.152/pdc6/api_r2.php";
         private HttpClient _Client = new HttpClient();
         private ObservableCollection<Post> _post;
+
 
         public StudentRecordsPage()
         {
             InitializeComponent();
+
         }
 
         protected override async void OnAppearing()
         {
+
             var content = await _Client.GetStringAsync(url_retrieve);
             var post = JsonConvert.DeserializeObject<List<Post>>(content);
 
@@ -38,6 +41,8 @@ namespace PDC06_Module08
             StudentListView.ItemsSource = _post;
             base.OnAppearing();
         }
+
+
 
         private async void OnRefresh(object sender, EventArgs e)
         {
@@ -87,7 +92,7 @@ namespace PDC06_Module08
             {
                 try
                 {
-                    var urlDelete = "http://192.168.100.18/pdc6/api-delete.php";
+                    var urlDelete = "http://26.254.254.152/pdc6/api-delete.php";
                     var data = JsonConvert.SerializeObject(new { id = post.ID });
                     var content = new StringContent(data, System.Text.Encoding.UTF8, "application/json");
 

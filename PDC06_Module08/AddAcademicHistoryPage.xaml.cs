@@ -9,7 +9,7 @@ namespace PDC06_Module08
 {
     public partial class AddAcademicHistoryPage : ContentPage
     {
-        private const string ApiUrl = "http://192.168.100.18/pdc6/academichistory-create.php"; // Replace with your actual API URL
+        private const string ApiUrl = "http://26.254.254.152/pdc6/academichistory-create.php"; // Replace with your actual API URL
 
         public AddAcademicHistoryPage()
         {

@@ -8,6 +8,9 @@ namespace PDC06_Module08
         public MainPage()
         {
             InitializeComponent();
+
+            // Set the navigation bar color to transparent
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void ViewStudentRecords_Clicked(object sender, EventArgs e)

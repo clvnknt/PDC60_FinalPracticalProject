@@ -74,7 +74,7 @@ namespace PDC06_Module08
         private async Task<bool> UpdateAttendance(int attendanceId, string studentName, DateTime attendanceDate, string status)
         {
             // Construct the API URL
-            string apiUrl = $"http://192.168.100.18/pdc6/attendance-update.php";
+            string apiUrl = $"http://26.254.254.152/pdc6/attendance-update.php";
 
             try
             {

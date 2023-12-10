@@ -78,7 +78,7 @@ namespace PDC06_Module08
         private async Task<bool> AddAttendance(string studentName, int studentId, DateTime attendanceDate, string status)
         {
             // Construct the API URL
-            string apiUrl = "http://192.168.100.18/pdc6/attendance-create.php";
+            string apiUrl = "http://26.254.254.152/pdc6/attendance-create.php";
 
             try
             {

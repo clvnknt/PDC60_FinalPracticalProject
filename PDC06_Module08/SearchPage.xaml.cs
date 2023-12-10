@@ -14,7 +14,7 @@ namespace PDC06_Module08
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SearchPage : ContentPage
     {
-        private const string url_search = "http://192.168.100.18/pdc6/api-search.php";
+        private const string url_search = "http://26.254.254.152/pdc6/api-search.php";
         private HttpClient _Client = new HttpClient();
         private ObservableCollection<Post> _posts;
         private StudentRecordsPage _studentRecordsPage;

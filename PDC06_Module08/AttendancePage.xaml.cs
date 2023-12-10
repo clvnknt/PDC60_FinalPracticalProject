@@ -10,7 +10,7 @@ namespace PDC06_Module08
 {
     public partial class AttendancePage : ContentPage
     {
-        private const string ApiUrl = "http://192.168.100.18/pdc6/attendance-read.php"; // Replace with your actual API URL
+        private const string ApiUrl = "http://26.254.254.152/pdc6/attendance-read.php"; // Replace with your actual API URL
 
         public AttendancePage()
         {
@@ -108,7 +108,7 @@ namespace PDC06_Module08
         private async Task<bool> DeleteAttendance(int attendanceId)
         {
             // Construct the API URL
-            string apiUrl = "http://192.168.100.18/pdc6/attendance-delete.php";
+            string apiUrl = "http://26.254.254.152/pdc6/attendance-delete.php";
 
             try
             {

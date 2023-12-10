@@ -4,9 +4,20 @@
              x:Class="PDC06_Module08.AddAttendancePage">
 
 	<StackLayout VerticalOptions="CenterAndExpand" Padding="20">
-		<Label Text="Add Attendance" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20" />
+        <ContentView>
+            <Frame Padding="12" CornerRadius="40" HasShadow="False">
+                <Image Source="addattendance.png" Aspect="AspectFill" HeightRequest="260" WidthRequest="200" />
+            </Frame>
+        </ContentView>
+        <Label Text="Add Attendace" FontSize="25" TextColor="#000000" Margin="0,0,0,20" HorizontalTextAlignment="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
 
-		<!-- Entry fields for user input -->
+        <!-- Entry fields for user input -->
 		<Entry Placeholder="Student Name" x:Name="studentNameEntry" Margin="0,0,0,10" />
 		<Entry Placeholder="Student ID" x:Name="studentIdEntry" Margin="0,0,0,10" Keyboard="Numeric" />
 		<DatePicker x:Name="attendanceDatePicker" Format="yyyy-MM-dd" Margin="0,0,0,10" />
@@ -19,8 +30,8 @@
 
 		<!-- Buttons -->
 		<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-			<Button Text="Add Attendance" Clicked="OnSubmitAttendanceClicked" Margin="0,0,10,0" />
-			<Button Text="Cancel" Clicked="OnCancelClicked" Margin="0,0,0,0" />
+            <Button Text="Add Attendance" Clicked="OnSubmitAttendanceClicked" BackgroundColor="#4A55A2" TextColor="White" Margin="0,0,10,0" CornerRadius="15" />
+            <Button Text="Cancel" Clicked="OnCancelClicked" Margin="0,0,0,0" CornerRadius="15" />
 		</StackLayout>
 	</StackLayout>
 

@@ -807,23 +807,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\calvinkent\\.nuget\\packages\\": {},
+    "C:\\Users\\russ\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08\\PDC06_Module08.csproj",
+      "projectUniqueName": "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08\\PDC06_Module08.csproj",
       "projectName": "PDC06_Module08",
-      "projectPath": "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08\\PDC06_Module08.csproj",
-      "packagesPath": "C:\\Users\\calvinkent\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08\\obj\\",
+      "projectPath": "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08\\PDC06_Module08.csproj",
+      "packagesPath": "C:\\Users\\russ\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\calvinkent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\russ\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -885,7 +885,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   },

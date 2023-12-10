@@ -8,7 +8,7 @@ namespace PDC06_Module08
 {
     public partial class AddStudentRecordsPage : ContentPage
     {
-        public const string url = "http://192.168.100.18/pdc6/api_create.php";
+        public const string url = "http://26.254.254.152/pdc6/api_create.php";
 
         private HttpClient _Client = new HttpClient();
 

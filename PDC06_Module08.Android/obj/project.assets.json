@@ -3677,24 +3677,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\calvinkent\\.nuget\\packages\\": {},
+    "C:\\Users\\russ\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08.Android\\PDC06_Module08.Android.csproj",
+      "projectUniqueName": "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08.Android\\PDC06_Module08.Android.csproj",
       "projectName": "PDC06_Module08.Android",
-      "projectPath": "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08.Android\\PDC06_Module08.Android.csproj",
-      "packagesPath": "C:\\Users\\calvinkent\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08.Android\\obj\\",
+      "projectPath": "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08.Android\\PDC06_Module08.Android.csproj",
+      "packagesPath": "C:\\Users\\russ\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\calvinkent\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\russ\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3708,8 +3708,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08\\PDC06_Module08.csproj": {
-              "projectPath": "C:\\Users\\calvinkent\\source\\repos\\PDC06_Module08\\PDC06_Module08\\PDC06_Module08.csproj"
+            "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08\\PDC06_Module08.csproj": {
+              "projectPath": "C:\\Users\\russ\\source\\repos\\PDC60_FinalPracticalProject\\PDC06_Module08\\PDC06_Module08.csproj"
             }
           }
         }
@@ -3721,14 +3721,6 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
-          },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.7.0, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

@@ -10,8 +10,8 @@ namespace PDC06_Module08
 {
     public partial class AcademicHistoryPage : ContentPage
     {
-        private const string ApiUrl = "http://192.168.100.18/pdc6/academichistory-read.php"; // Replace with your actual API URL
-        private const string DeleteApiUrl = "http://192.168.100.18/pdc6/academichistory-delete.php"; // Replace with your actual delete API URL
+        private const string ApiUrl = "http://26.254.254.152/pdc6/academichistory-read.php"; // Replace with your actual API URL
+        private const string DeleteApiUrl = "http://26.254.254.152/pdc6/academichistory-delete.php"; // Replace with your actual delete API URL
 
         public AcademicHistoryPage()
         {
@@ -76,7 +76,7 @@ namespace PDC06_Module08
                 using (HttpClient client = new HttpClient())
                 {
                     // Send a DELETE request to the API to delete academic record
-                    var response = await client.DeleteAsync($"http://192.168.100.18/pdc6/academichistory-delete.php?id={record.id}");
+                    var response = await client.DeleteAsync($"http://26.254.254.152/pdc6/academichistory-delete.php?id={record.id}");
 
                     // Check if the request was successful
                     return response.IsSuccessStatusCode;

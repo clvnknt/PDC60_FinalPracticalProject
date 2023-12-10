@@ -4,13 +4,36 @@
              x:Class="PDC06_Module08.MainPage">
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label Text="Student Records App" FontSize="28" FontAttributes="Bold" TextColor="#2196F3" Margin="0,0,0,10" HorizontalTextAlignment="Center" />
+        <ContentView>
+            <Frame Padding="12" CornerRadius="40" HasShadow="False">
+                <Image Source="AUF.png" Aspect="AspectFill" HeightRequest="300" WidthRequest="300" />
+            </Frame>
+        </ContentView>
 
-        <Label Text="Effortlessly manage and view student records." FontSize="16" TextColor="#757575" Margin="0,0,0,30" HorizontalTextAlignment="Center" />
+        <Label Text="STUDENT RECORDS" FontSize="35" TextColor="#548CA8" Margin="0,0,0,10" HorizontalTextAlignment="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
 
-        <Button Text="View Student Records" Clicked="ViewStudentRecords_Clicked" />
-        <Button Text="View Attendance Records" Clicked="OnAttendanceButtonClicked" />
-        <Button Text="View Academic History" Clicked="OnViewAcademicHistoryClicked" />
-        <Button Text="About Us" Clicked="AboutUs_Clicked" BackgroundColor="#2196F3" TextColor="White" FontSize="18" CornerRadius="5" HeightRequest="50" />
+
+        <Label Text="Effortlessly manage and view student records."
+           FontSize="16"
+           TextColor="#757575"
+           Margin="0,0,0,30"
+           HorizontalTextAlignment="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="Greenhouse-Regular.otf#Greenhouse-Regular" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <Button Grid.Row="2" Text="View Student Records" Clicked="ViewStudentRecords_Clicked" CornerRadius="20" WidthRequest="200" />
+        <Button Grid.Row="3" Text="View Attendance Records" Clicked="OnAttendanceButtonClicked" CornerRadius="20" WidthRequest="200" />
+        <Button Grid.Row="4" Text="View Academic History" Clicked="OnViewAcademicHistoryClicked" CornerRadius="20" WidthRequest="200" />
+        <Button Grid.Row="5" Text="About Us" Clicked="AboutUs_Clicked" BackgroundColor="#334257" TextColor="White" FontSize="18" CornerRadius="20" WidthRequest="200" HeightRequest="50" />
     </StackLayout>
 </ContentPage>

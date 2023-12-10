@@ -9,7 +9,7 @@ namespace PDC06_Module08
 {
     public partial class UpdateAcademicHistoryPage : ContentPage
     {
-        private const string UpdateApiUrl = "http://192.168.100.18/pdc6/academichistory-update.php"; // Replace with your actual update API URL
+        private const string UpdateApiUrl = "http://26.254.254.152/pdc6/academichistory-update.php"; // Replace with your actual update API URL
         private AcademicHistoryPage.AcademicHistoryRecord _selectedRecord;
 
         public UpdateAcademicHistoryPage(AcademicHistoryPage.AcademicHistoryRecord selectedRecord)
