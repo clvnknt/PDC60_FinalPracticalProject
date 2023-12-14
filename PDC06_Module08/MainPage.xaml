@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC06_Module08.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <ContentView>
+            <Frame Padding="12" CornerRadius="40" HasShadow="False">
+                <Image Source="AUF.png" Aspect="AspectFill" HeightRequest="300" WidthRequest="300" />
+            </Frame>
+        </ContentView>
+
+        <Label Text="STUDENT RECORDS" FontSize="35" TextColor="#548CA8" Margin="0,0,0,10" HorizontalTextAlignment="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+
+        <Label Text="Effortlessly manage and view student records."
+           FontSize="16"
+           TextColor="#757575"
+           Margin="0,0,0,30"
+           HorizontalTextAlignment="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="Greenhouse-Regular.otf#Greenhouse-Regular" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <Button Grid.Row="2" Text="View Student Records" Clicked="ViewStudentRecords_Clicked" CornerRadius="20" WidthRequest="200" />
+        <Button Grid.Row="3" Text="View Attendance Records" Clicked="OnAttendanceButtonClicked" CornerRadius="20" WidthRequest="200" />
+        <Button Grid.Row="4" Text="View Academic History" Clicked="OnViewAcademicHistoryClicked" CornerRadius="20" WidthRequest="200" />
+        <Button Grid.Row="5" Text="About Us" Clicked="AboutUs_Clicked" BackgroundColor="#334257" TextColor="White" FontSize="18" CornerRadius="20" WidthRequest="200" HeightRequest="50" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC06_Module08.StudentRecordsPage">
+
+    <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+
+        <!-- Title Section -->
+        <StackLayout>
+            <ContentView>
+                <Frame Padding="12" CornerRadius="40" HasShadow="False">
+                    <Image Source="studentrec.png" Aspect="AspectFill" HeightRequest="190" WidthRequest="200" />
+                </Frame>
+            </ContentView>
+            <Label Text="STUDENT RECORDS" FontSize="35" TextColor="#000000" Margin="0,0,0,10" HorizontalTextAlignment="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label Text="View and manage student records"
+                       FontSize="16"
+                       TextColor="#757575"
+                       Margin="0,0,0,30"
+                       HorizontalTextAlignment="Center">        
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Greenhouse-Regular.otf#Greenhouse-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                         </Label>
+            </StackLayout>
+
+        <!-- Action Buttons -->
+        <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,20,0,10">
+            <Button Text="Add Record" Clicked="OnAddRecord" BackgroundColor="#4CAF50" TextColor="White" FontSize="18" CornerRadius="15" HeightRequest="50" FlexLayout.Grow="1" />
+            <Button Text="Refresh" Clicked="OnRefresh" BackgroundColor="#2196F3" TextColor="White" FontSize="18" CornerRadius="15" HeightRequest="50" FlexLayout.Grow="1" />
+            <Button Text="Search" Clicked="OnSearch" BackgroundColor="#FF9800" TextColor="White" FontSize="18" CornerRadius="15" HeightRequest="50" FlexLayout.Grow="1" />
+        </StackLayout>
+
+        <!-- Student Records List -->
+        <ListView x:Name="StudentListView" ItemTapped="OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" BackgroundColor="#F5F5F5" Margin="0,5,0,5" Spacing="2">
+                            <Label Text="{Binding name}" FontAttributes="Bold" FontSize="16" TextColor="#333333" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>

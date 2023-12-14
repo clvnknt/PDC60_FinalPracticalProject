@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC06_Module08.AboutUsPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15" Spacing="20">
+
+                <Label Text="ABOUT US" FontSize="35" TextColor="#000000" Margin="0,0,0,10" HorizontalTextAlignment="Center">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                
+                <ContentView>
+                    <Frame Padding="12" CornerRadius="40" HasShadow="False">
+                        <Image Source="about.png" Aspect="AspectFill" HeightRequest="300" WidthRequest="300" />
+                    </Frame>
+                </ContentView>
+
+                <Label Text="The Student Records App is a Xamarin.Forms application that allows you to effortlessly manage and view student records. It provides the following features"
+                   FontSize="20"
+                   TextColor="#757575"
+                   Margin="0,0,0,30"
+                   HorizontalTextAlignment="Center">    
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Greenhouse-Regular.otf#Greenhouse-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <StackLayout>
+                    <Label Text="CRUD Functionality:"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="#4682A9"
+                        HorizontalOptions="Start"
+                        Margin="0,10,0,5" />
+                    <Label Text="Create, Read, Update, and Delete student records with ease."
+                        FontSize="18"
+                        TextColor="#757575"
+                        HorizontalOptions="Start" />
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Search Functionality:"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="#4682A9"
+                        HorizontalOptions="Start"
+                        Margin="0,10,0,5" />
+                    <Label Text="Efficiently search and retrieve student records based on various parameters like name, roll number, age, and email."
+                        FontSize="18"
+                        TextColor="#757575"
+                        HorizontalOptions="Start" />
+                </StackLayout>
+
+                <!-- Team Members Section -->
+                <StackLayout>
+                    <Label Text="Team Members:"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="#000000"
+                        HorizontalOptions="Start"
+                        Margin="0,20,0,5" />    
+
+                    <!-- StackLayout for Images -->
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        <Image Source="one.png" WidthRequest="200" HeightRequest="220" Aspect="AspectFill"  />
+                        <Label Text="Ron Russelle Bangsil" FontSize="20" HorizontalOptions="Center" TextColor="#000000">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                        <Image Source="two.png" WidthRequest="200" HeightRequest="200" Aspect="AspectFill" />
+                        <Label Text="Calvin Kent Pamandanan" FontSize="20" HorizontalOptions="Center" TextColor="#000000">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                        <Image Source="three.png" WidthRequest="200" HeightRequest="200" Aspect="AspectFill" />
+                        <Label Text="Bobby Marcko Cruz" FontSize="20" HorizontalOptions="Center" TextColor="#000000">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                        <Image Source="four.png" WidthRequest="200" HeightRequest="200" Aspect="AspectFill" />
+                        <Label Text="Arnold Nicholas Lim" FontSize="20" HorizontalOptions="Center" TextColor="#000000">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="Android" Value="Hanson-Bold.otf#Hanson-Bold" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
